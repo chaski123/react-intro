@@ -13,10 +13,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className={claseObjeto.primary}></p>
+        
           {
-            user ? "en linea" : "offline"
+            user ? <p className={claseObjeto.primary}>Online 👌</p> : <p className={claseObjeto.danger}>offline 😢</p>
           }
+          
         <a
           className="App-link"
           href="https://reactjs.org"
